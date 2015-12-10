@@ -1,0 +1,28 @@
+{
+  "name": "snaplog",
+  "version": "0.0.0",
+  "description": "A better logger tool than console.log with colors and deep inspection",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexandreAWE/snaplog.git"
+  },
+  "keywords": [
+    "log",
+    "logger",
+    "console",
+    "console.log",
+    "debug",
+    "tools",
+    "sysadmin"
+  ],
+  "author": "Alexandre Da Costa <alexandre.dacosta94@gmail.com> (www.alexandredacosta.fr)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexandreAWE/snaplog/issues"
+  },
+  "homepage": "https://github.com/AlexandreAWE/snaplog#readme"
+}
