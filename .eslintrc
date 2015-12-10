@@ -1,0 +1,25 @@
+{
+    "env": {
+        "node": true,
+        "es6" : true
+    },
+    "globals": {
+
+    },
+    "rules": {
+
+        // Possible Errors
+
+        // Variables
+        "no-shadow" : 0,
+        "no-use-before-define": 0,
+        "no-underscore-dangle": 0,
+
+        // Stylistic Issues
+        "quotes": [2, "single", "avoid-escape"],
+        "new-cap": 0,
+
+        // Best Practices
+        "no-multi-spaces": [2, { exceptions: { "VariableDeclarator": true } }]
+    }
+}

@@ -2,7 +2,7 @@
   "name": "snaplog",
   "version": "0.0.0",
   "description": "A better logger tool than console.log with colors and deep inspection",
-  "main": "index.js",
+  "main": "snaplog.js",
   "scripts": {
     "test": "mocha"
   },
@@ -24,5 +24,11 @@
   "bugs": {
     "url": "https://github.com/AlexandreAWE/snaplog/issues"
   },
-  "homepage": "https://github.com/AlexandreAWE/snaplog#readme"
+  "homepage": "https://github.com/AlexandreAWE/snaplog#readme",
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "cli-color": "^1.1.0",
+    "lodash": "^3.10.1",
+    "moment": "^2.10.6"
+  }
 }
