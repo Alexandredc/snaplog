@@ -2,11 +2,10 @@
 
 This small tool allow you to enhance your logs in console. Use differents levels of log, create a progress bar, deeply inspect your objects and enhance your errors.
 
-![ng-flat-datepicker screenshot](http://i.imgur.com/qA0DdT9.png)
+![ng-flat-datepicker screenshot](http://i.imgur.com/243FKuz.png)
 
 **(Working progress)**
 **Todo :**
- - deeply inspection
  - enhance errors
  - build script (ES5)
  - unit tests
@@ -69,6 +68,7 @@ logger.config({
 **.info(message)**
 **.warn(message)**
 **.error(message)**
+**.emergency(message)**
 *these methods allow you to print log in terminal with colors*
 (String) message
 ```js
@@ -76,6 +76,14 @@ logger.success('We did it !');
 logger.info('Roger that !');
 logger.warn('Houston we have a problem !');
 logger.alert('Mayday Mayday Mayday !');
+```
+
+**.inspect(object, depth)**
+*deep inspection of an object*
+(String) message
+(Number) depth
+```js
+logger.inspect({ we: { find: { the: { black: [ { box: '!!!!'}]}}}});
 ```
 
 ### Progress bar
