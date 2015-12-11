@@ -5,6 +5,18 @@ const logger = require('./index.js');
 logger.success('We did it !');
 logger.info('Roger that !');
 logger.warn('Houston do you copy ??');
+
+function engineChecking() {
+	throw new Error('The engine is broken!');
+}
+
+try{
+	engineChecking();
+}
+catch(err){
+	logger.error(err);
+}
+
 logger.error('Houston we have a problem !');
 logger.emergency('Mayday Mayday Mayday !');
 logger.inspect({we: {find: {the: {black: [{box: '!!!!'}]}}}});

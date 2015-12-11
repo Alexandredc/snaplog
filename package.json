@@ -1,6 +1,6 @@
 {
   "name": "snaplog",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "A better logger tool than console.log with colors, progress and deep inspection",
   "main": "index.js",
   "scripts": {
@@ -30,6 +30,7 @@
     "charm": "^1.0.0",
     "cli-color": "^1.1.0",
     "lodash": "^3.10.1",
-    "moment": "^2.10.6"
+    "moment": "^2.10.6",
+    "stack-trace": "0.0.9"
   }
 }

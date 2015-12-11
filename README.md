@@ -5,7 +5,7 @@ This small tool allow you to enhance your logs in console. Use differents levels
 
 [![NPM](https://nodei.co/npm/snaplog.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/snaplog/)
 
-![ng-flat-datepicker screenshot](http://i.imgur.com/243FKuz.png)
+![ng-flat-datepicker screenshot](http://i.imgur.com/8aY10Cs.png)
 
 **(Working progress)**
 **Todo :**
@@ -77,8 +77,9 @@ logger.config({
 ```js
 logger.success('We did it !');
 logger.info('Roger that !');
-logger.warn('Houston we have a problem !');
-logger.alert('Mayday Mayday Mayday !');
+logger.warn('Houston do you copy ??');
+logger.error('Houston we have a problem !');
+logger.emergency('Mayday Mayday Mayday !');
 ```
 
 **.inspect(object, depth)** - *Deep inspection of an object*
