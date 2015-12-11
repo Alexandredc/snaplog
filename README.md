@@ -9,7 +9,6 @@ This small tool allow you to enhance your logs in console. Use differents levels
 
 **(Working progress)**
 **Todo :**
- - enhance errors
  - build script (ES5)
  - unit tests
 
