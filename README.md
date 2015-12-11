@@ -2,6 +2,9 @@
 
 This small tool allow you to enhance your logs in console. Use differents levels of log, create a progress bar, deeply inspect your objects and enhance your errors.
 
+
+[![NPM](https://nodei.co/npm/snaplog.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/snaplog/)
+
 ![ng-flat-datepicker screenshot](http://i.imgur.com/243FKuz.png)
 
 **(Working progress)**
@@ -23,13 +26,13 @@ var logger = require('snaplog');
 
 // Set options to the logger
 logger.config({}) // optional
-<br/>
+
 // Log in console with differents levels
 logger.success('We did it !');
 logger.info('Roger that !');
 logger.warn('Houston we have a problem !');
 logger.alert('Mayday Mayday Mayday !');
-<br/>
+
 // Create a progressbar
 var progress = logger.progress({title: 'From Paris to New York', steps: 4});
 
@@ -41,13 +44,12 @@ setTimeout(nextCall, 7000, 'We did it !');
 function nextCall(message) {
 	progress.next({description: message});
 }
-
 ```
-<br/>
+
 ## Methods
-**.config(options)**<br/>
-*this method allows you to set up the logger*<br/>
-(Object) options<br/>
+**.config(options)** - *This method allows you to set up the logger*
+ - (String) Object
+
 ```js
 logger.config({
 	enabled: true, // toggle the logger
@@ -61,45 +63,49 @@ logger.config({
 		warn: {enabled: true, color: 'yellow'},
 		error: {enabled: true, color: 'red'}
 	}
-})
+}
 ```
-<br/>
-**.success(message)**<br/>
-**.info(message)**<br/>
-**.warn(message)**<br/>
-**.error(message)**<br/>
-**.emergency(message)**<br/>
-*these methods allow you to print log in terminal with colors*<br/>
-(String) message<br/>
+
+ * **.success(message)** - *These methods allow you to print success log in terminal with colors*
+ *  **.info(message)** - *These methods allow you to print info log in terminal with colors*
+ *  **.warn(message)** - *These methods allow you to print warn log in terminal with colors*
+ *  **.error(message)** - *These methods allow you to print error log in terminal with colors*
+ *  **.emergency(message)** - *These methods allow you to print emergency log in terminal with colors*
+
+ * (String) message
+
 ```js
 logger.success('We did it !');
 logger.info('Roger that !');
 logger.warn('Houston we have a problem !');
 logger.alert('Mayday Mayday Mayday !');
 ```
-<br/>
-**.inspect(object, depth)**<br/>
-*deep inspection of an object*<br/>
-(String) message<br/>
-(Number) depth<br/>
+
+**.inspect(object, depth)** - *Deep inspection of an object*
+
+ - (String) message
+ - (Number) depth
+
 ```js
 logger.inspect({ we: { find: { the: { black: [ { box: '!!!!'}]}}}});
 ```
-<br/>
+
 ### Progress bar
-**.progress(options)**<br/>
-*instanciate a new progress bar*<br/>
-(Number) options.steps *[required - set the total steps for the progression]*<br/>
-(String) options.title *[optional - set the log's title]*<br/>
+**.progress(options)** - *Instanciate a new progress bar*
+
+ - (Number) options.steps *[required - set the total steps for the progression]*
+ - (String) options.title *[optional - set the log's title]*
 ```js
 var progress = logger.progress({title: 'From Paris to New York', steps: 4});
 ```
-<br/>
-**progress.next(options)**<br/>
-*push the next step*<br/>
-(String) options.description *[optional - description of the step - default:1]*<br/>
-(String) options.steps *[optional - number of steps to push - default:'']*<br/>
+
+**progress.next(options)** - *Push the next step*
+ - (String) options.description *[optional - description of the step - default:1]*
+ - (String) options.steps *[optional - number of steps to push - default:'']*
 
 ```js
 progress.next({description: 'Roger that !'});
 ```
+
+#### License: MIT
+#### Author: [Alexandre Da Costa](https://github.com/AlexandreAWE)
