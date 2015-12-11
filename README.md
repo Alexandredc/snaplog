@@ -23,13 +23,13 @@ var logger = require('snaplog');
 
 // Set options to the logger
 logger.config({}) // optional
-
+<br/>
 // Log in console with differents levels
 logger.success('We did it !');
 logger.info('Roger that !');
 logger.warn('Houston we have a problem !');
 logger.alert('Mayday Mayday Mayday !');
-
+<br/>
 // Create a progressbar
 var progress = logger.progress({title: 'From Paris to New York', steps: 4});
 
@@ -43,11 +43,11 @@ function nextCall(message) {
 }
 
 ```
-
+<br/>
 ## Methods
-**.config(options)**
-*this method allows you to set up the logger*
-(Object) options
+**.config(options)**<br/>
+*this method allows you to set up the logger*<br/>
+(Object) options<br/>
 ```js
 logger.config({
 	enabled: true, // toggle the logger
@@ -63,42 +63,42 @@ logger.config({
 	}
 })
 ```
-
-**.success(message)**
-**.info(message)**
-**.warn(message)**
-**.error(message)**
-**.emergency(message)**
-*these methods allow you to print log in terminal with colors*
-(String) message
+<br/>
+**.success(message)**<br/>
+**.info(message)**<br/>
+**.warn(message)**<br/>
+**.error(message)**<br/>
+**.emergency(message)**<br/>
+*these methods allow you to print log in terminal with colors*<br/>
+(String) message<br/>
 ```js
 logger.success('We did it !');
 logger.info('Roger that !');
 logger.warn('Houston we have a problem !');
 logger.alert('Mayday Mayday Mayday !');
 ```
-
-**.inspect(object, depth)**
-*deep inspection of an object*
-(String) message
-(Number) depth
+<br/>
+**.inspect(object, depth)**<br/>
+*deep inspection of an object*<br/>
+(String) message<br/>
+(Number) depth<br/>
 ```js
 logger.inspect({ we: { find: { the: { black: [ { box: '!!!!'}]}}}});
 ```
-
+<br/>
 ### Progress bar
-**.progress(options)**
-*instanciate a new progress bar*
-(Number) options.steps *[required - set the total steps for the progression]*
-(String) options.title *[optional - set the log's title]*
+**.progress(options)**<br/>
+*instanciate a new progress bar*<br/>
+(Number) options.steps *[required - set the total steps for the progression]*<br/>
+(String) options.title *[optional - set the log's title]*<br/>
 ```js
 var progress = logger.progress({title: 'From Paris to New York', steps: 4});
 ```
-
-**progress.next(options)**
-*push the next step*
-(String) options.description *[optional - description of the step - default:1]*
-(String) options.steps *[optional - number of steps to push - default:'']*
+<br/>
+**progress.next(options)**<br/>
+*push the next step*<br/>
+(String) options.description *[optional - description of the step - default:1]*<br/>
+(String) options.steps *[optional - number of steps to push - default:'']*<br/>
 
 ```js
 progress.next({description: 'Roger that !'});
