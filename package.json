@@ -27,6 +27,7 @@
   "homepage": "https://github.com/AlexandreAWE/snaplog#readme",
   "dependencies": {
     "chalk": "^1.1.1",
+    "charm": "^1.0.0",
     "cli-color": "^1.1.0",
     "lodash": "^3.10.1",
     "moment": "^2.10.6"
