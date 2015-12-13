@@ -7,9 +7,11 @@ This small tool allow you to enhance your logs in console. Use differents levels
 
 ![ng-flat-datepicker screenshot](http://i.imgur.com/8aY10Cs.png)
 
-**(Working progress)**
+**(Working progress) - only tested on nodejs 5.0 with ES6. I plan to convert in ES5 with Babel and so support older version of nodejs.**
+*Please, feel free to contribute.*
+
 **Todo :**
- - build script (ES5)
+ - support ES5 with Babel
  - unit tests
 
 ## Install
@@ -29,8 +31,10 @@ logger.config({}) // optional
 // Log in console with differents levels
 logger.success('We did it !');
 logger.info('Roger that !');
-logger.warn('Houston we have a problem !');
-logger.alert('Mayday Mayday Mayday !');
+logger.warn('Houston do you copy ??');
+logger.error('Houston we have a problem !');
+logger.emergency('Mayday Mayday Mayday !');
+logger.inspect({we: {find: {the: {black: [{box: '!!!!'}]}}}});
 
 // Create a progressbar
 var progress = logger.progress({title: 'From Paris to New York', steps: 4});
@@ -65,11 +69,11 @@ logger.config({
 }
 ```
 
- * **.success(message)** - *These methods allow you to print success log in terminal with colors*
- *  **.info(message)** - *These methods allow you to print info log in terminal with colors*
- *  **.warn(message)** - *These methods allow you to print warn log in terminal with colors*
- *  **.error(message)** - *These methods allow you to print error log in terminal with colors*
- *  **.emergency(message)** - *These methods allow you to print emergency log in terminal with colors*
+ * **.success(message)** - *print success log in terminal with colors*
+ *  **.info(message)** - *print info log in terminal with colors*
+ *  **.warn(message)** - *print warn log in terminal with colors*
+ *  **.error(message)** - *print error log in terminal with colors*
+ *  **.emergency(message)** - *print emergency log in terminal with colors*
 
  * (String) message
 
