@@ -1,6 +1,6 @@
 {
   "name": "snaplog",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "A better logger tool than console.log with colors, progress and deep inspection",
   "main": "index.js",
   "scripts": {
